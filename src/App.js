@@ -1,40 +1,49 @@
 import React from 'react';
+//pages
+import { Home } from './home';
+import { About } from './about';
+import { Education } from './education';
+import { Error } from './error';
+import { Projects } from './projects';
+import { Portfolio } from './portfolio';
+import { Contact } from './contact';
+
+import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
+
 import {
   ChakraProvider,
-  Box,
-  Text,
-  Link,
-  VStack,
-  Code,
-  Grid,
   theme,
 } from '@chakra-ui/react';
-import { ColorModeSwitcher } from './ColorModeSwitcher';
-import { Logo } from './Logo';
 
 function App() {
   return (
     <ChakraProvider theme={theme}>
-      <Box textAlign="center" fontSize="xl">
-        <Grid minH="100vh" p={3}>
-          <ColorModeSwitcher justifySelf="flex-end" />
-          <VStack spacing={8}>
-            <Logo h="40vmin" pointerEvents="none" />
-            <Text>
-              Edit <Code fontSize="xl">src/App.js</Code> and save to reload.
-            </Text>
-            <Link
-              color="teal.500"
-              href="https://chakra-ui.com"
-              fontSize="2xl"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              Learn Chakra
-            </Link>
-          </VStack>
-        </Grid>
-      </Box>
+
+      <Router>
+        <Switch>
+          <Route exact path='/'>
+            <Home />
+          </Route>
+          <Route path='/about'>
+            <About />
+          </Route>
+          <Route path='/education'>
+            <Education />
+          </Route>
+          <Route path='/projects'>
+            <Projects />
+          </Route>
+          <Route path='/portfolio'>
+            <Portfolio />
+          </Route>
+          <Route path='/contact'>
+            <Contact />
+          </Route>
+          <Route path='*'>
+            <Error />
+          </Route>
+        </Switch>
+      </Router>
     </ChakraProvider>
   );
 }
