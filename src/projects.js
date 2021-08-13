@@ -6,17 +6,30 @@ export const Projects = () => {
 
   const list_of_projects = [
     {
-      name: 'TWITTER LOGIN PAGE',
+      name: 'Twitter Login Page',
       link: 'https://hiteshmeta85.github.io/responive-twitter-login-page/',
       skills: 'HTML & CSS',
       info: 'This was created on 6th May 2021',
     },
     {
-      name: 'RESPONSIVE NAVBAR',
+      name: 'Responsive Navbar',
       link: 'https://updated-2-css.netlify.app',
       skills: 'HTML CSS REACT CHAKRA UI',
       info: 'This was created on 28th June 2021',
-    }];
+    },
+    {
+      name: 'Daily Journal',
+      link: 'https://ancient-cove-61432.herokuapp.com/',
+      skills: 'NODE EXPRESS AND EJS',
+      info: 'This was created on 10th August 2021',
+    },
+    {
+      name: 'Newsletter Signup',
+      link: 'https://ancient-cove-61432.herokuapp.com/',
+      skills: 'NODE EXPRESS AND MailChimp-API',
+      info: 'This was created on 8th August 2021',
+    }
+  ];
 
   const Lists = () => {
     return (
@@ -83,7 +96,8 @@ export const Projects = () => {
       <Box>
         <Text width={{ base: '90%', lg: '80%' }}
               mx='auto'
-              marginTop={{ base: '1rem', lg: '3rem' }}
+              marginTop='0.5rem'
+              marginBottom='1rem'
               fontSize='1rem'
               fontFamily='Overpass Mono'
               color='#AA9D94'>

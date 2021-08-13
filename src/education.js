@@ -39,7 +39,7 @@ export const Education = () => {
             Secondary
             Education</Text>
           <Text fontSize='1rem'> Gregorian Public School , Raigad , MH-India</Text>
-          <List padding='0.5rem 0 0.5rem 1.5rem' backgroundColor='#F4C7AB' fontWeight='400' fontFamily='Heebo'>
+          <List padding='0.5rem 0 0.5rem 1.5rem' backgroundColor='#ffe8dc' fontWeight='400' fontFamily='Heebo'>
             <ListItem>- Secured 92% in X th grade (2nd in Class)</ListItem>
             <ListItem>- Secured 82% in IX th grade (3rd in Class)</ListItem>
             <ListItem>- Student of the year 2017-18</ListItem>
@@ -54,7 +54,7 @@ export const Education = () => {
             Secondary
             Education</Text>
           <Text fontSize='1rem'> MNR School Of Excellence , Navi Mumbai , MH-India</Text>
-          <List padding='0.5rem 0 0.5rem 1.5rem' backgroundColor='#F4C7AB' fontWeight='400' fontFamily='Heebo'>
+          <List padding='0.5rem 0 0.5rem 1.5rem' backgroundColor='#ffe8dc' fontWeight='400' fontFamily='Heebo'>
             <ListItem>- Secured 74.4% in XII th grade</ListItem>
             <ListItem>- Secured 80% in XI th grade (5th in Class)</ListItem>
           </List>
@@ -67,7 +67,7 @@ export const Education = () => {
             Education /
             Under-Graduate</Text>
           <Text fontSize='1rem'> Pillai College Of Engineering , Navi Mumbai , MH-India</Text>
-          <List padding='0.5rem 0 0.5rem 1.5rem' backgroundColor='#F4C7AB' fontWeight='400' fontFamily='Heebo'>
+          <List padding='0.5rem 0 0.5rem 1.5rem' backgroundColor='#ffe8dc' fontWeight='400' fontFamily='Heebo'>
             <ListItem>- Currently pursuing Computer Engineering (First Year)</ListItem>
           </List>
         </Box>

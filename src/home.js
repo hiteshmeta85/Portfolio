@@ -16,17 +16,6 @@ export const Home = () => {
      justifyContent='space-between'
 >
 
-  {/*<Text*/}
-  {/*  fontFamily='Heebo'*/}
-  {/*  fontWeight='500'*/}
-  {/*  height={{ base: '5%', lg: '15%' }}*/}
-  {/*  fontSize='1.5rem'*/}
-  {/*  color='#7D5A50'*/}
-  {/*>*/}
-  {/*  &lt; / &gt;*/}
-
-  {/*</Text>*/}
-
   <Box height='40%'>
 
     <Text
@@ -99,5 +88,4 @@ export const Home = () => {
 </Box>
 
 )
-
 }
