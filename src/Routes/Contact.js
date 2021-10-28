@@ -8,7 +8,7 @@ import {
   Stack, Textarea,
 } from '@chakra-ui/react';
 import React from 'react';
-import { HomeButton } from './components/homeButton';
+import { HomeButton } from '../components/HomeButton';
 
 export const Contact = () => {
   return (
@@ -28,7 +28,7 @@ export const Contact = () => {
         <Text
           width={{ base: '90%', lg: '80%' }}
           mx='auto'
-          marginTop={{ base: '1rem', lg: '3rem' }}
+          marginTop='1rem'
           fontSize='3rem'
           fontFamily='Overpass Mono'
           color='#AA9D94'

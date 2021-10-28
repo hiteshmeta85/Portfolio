@@ -1,5 +1,5 @@
 import { Box, Image, Link, Text } from '@chakra-ui/react';
-import { HomeButton } from './components/homeButton';
+import { HomeButton } from '../components/HomeButton';
 
 export const About = () => {
   return (
@@ -17,7 +17,7 @@ export const About = () => {
         <Text
           width={{ base: '90%', lg: '80%' }}
           mx='auto'
-          marginTop={{base:'1rem',lg:'3rem'}}
+          marginTop='1rem'
           fontSize='3rem'
           fontFamily='Overpass Mono'
           color='#AA9D94'
@@ -45,7 +45,7 @@ export const About = () => {
             textAlign='justify'
             marginBottom='1rem'
           >
-            Hello! My name is Hitesh Meta, and I'm a Front-End Developer, living in Mumbai,India. I'm a first year
+            Hello! My name is Hitesh Meta, and I'm a Full-Stack Web Developer, living in Mumbai,India. I'm a second year
             Computer
             Science Student, pursuing
             my degree from Mumbai University.
@@ -54,8 +54,8 @@ export const About = () => {
             mx='auto'
             textAlign='justify'
           >
-            I have a diverse set of skills, ranging from design, to HTML + CSS + Javascript. I also have an experience
-            in using Front-End Libraries such as React , Bootstrap and Chakra UI.
+            I am a react-based developer. I have a diverse set of skills, ranging from design, to HTML, CSS, and Javascript, React, Bootstrap and Chakra-UI for the Front-end, and
+            Node.js, Express.js, TypeORM, Postgres for the Back-end.
           </Text>
           <Text
             marginTop='1rem'

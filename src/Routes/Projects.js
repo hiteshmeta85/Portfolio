@@ -1,6 +1,5 @@
 import { Box, Button, Text } from '@chakra-ui/react';
-import { Link } from 'react-router-dom';
-import { HomeButton } from './components/homeButton';
+import { HomeButton } from '../components/HomeButton';
 
 export const Projects = () => {
 
@@ -12,10 +11,10 @@ export const Projects = () => {
       info: 'This was created on 6th May 2021',
     },
     {
-      name: 'Responsive Navbar',
-      link: 'https://updated-2-css.netlify.app',
-      skills: 'HTML CSS REACT CHAKRA UI',
-      info: 'This was created on 28th June 2021',
+      name: 'To-do List App',
+      link:'https://afternoon-woodland-37937.herokuapp.com/',
+      skills: 'NODE EXPRESS MONGODB',
+      info: 'This was created on 17th August 2021'
     },
     {
       name: 'Daily Journal',
@@ -25,9 +24,15 @@ export const Projects = () => {
     },
     {
       name: 'Newsletter Signup',
-      link: 'https://ancient-cove-61432.herokuapp.com/',
+      link: 'https://rocky-mesa-16580.herokuapp.com/',
       skills: 'NODE EXPRESS AND MailChimp-API',
       info: 'This was created on 8th August 2021',
+    },
+    {
+      name: 'Responsive Navbar',
+      link: 'https://updated-2-css.netlify.app',
+      skills: 'HTML CSS REACT CHAKRA UI',
+      info: 'This was created on 28th June 2021',
     }
   ];
 
@@ -80,7 +85,7 @@ export const Projects = () => {
         <Text
           width={{ base: '90%', lg: '80%' }}
           mx='auto'
-          marginTop={{ base: '1rem', lg: '3rem' }}
+          marginTop='1rem'
           fontSize='3rem'
           fontFamily='Overpass Mono'
           color='#AA9D94'
@@ -90,9 +95,10 @@ export const Projects = () => {
 
       </Box>
 
-      <Box width={{ base: '90%', lg: '80%' }} mx='auto'>
-        <Lists />
-      </Box>
+        <Box width={{ base: '90%', lg: '80%' }} mx='auto'>
+          <Lists />
+        </Box>
+
       <Box>
         <Text width={{ base: '90%', lg: '80%' }}
               mx='auto'

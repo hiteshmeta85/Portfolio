@@ -1,7 +1,7 @@
 import { Box, Text} from '@chakra-ui/react';
 import { FaGithub, FaInstagram, FaLinkedin, FaTwitter} from 'react-icons/fa';
 import React from 'react';
-import { Navbar } from './navbar-routes';
+import { Navbar } from '../components/NavbarRoutes';
 export const Home = () => {
 
  return(
@@ -11,12 +11,11 @@ export const Home = () => {
      flexDirection='column'
      textAlign='center'
      height='100vh'
-     minH='620px'
      mx='auto'
      justifyContent='space-between'
 >
 
-  <Box height='40%'>
+  <Box>
 
     <Text
       fontFamily='Playfair Display'
@@ -44,24 +43,26 @@ export const Home = () => {
           color='#7D5A50'
           letterSpacing='2px'
     >
-      A FRONT-END DEVELOPER
+      A FULL-STACK WEB DEVELOPER
     </Text>
     <Text fontFamily='Heebo'
           fontWeight='400'
-          marginBottom='3rem'
           color='#A2B29F'
           letterSpacing='2px'>
       .html .css .js .react .chakraUI
     </Text>
+    <Text fontFamily='Heebo'
+          fontWeight='400'
+          color='#A2B29F'
+          letterSpacing='2px'>
+      .nodejs expressjs postgres typeorm
+    </Text>
+
   </Box>
 
-  {/*navbar*/}
-
   <Navbar />
-
   <Box
     mx='auto'
-    height='18%'
   >
     <Text
       fontFamily='Heebo'
@@ -77,6 +78,7 @@ export const Home = () => {
       justifyContent='space-between'
       marginTop='0.5rem'
       color='#7D5A50'
+      marginBottom='2rem'
     >
       <Text><a href='https://twitter.com/MetaHitesh85'><FaTwitter size='1.5rem' /></a></Text>
       <Text><a href='https://www.linkedin.com/in/hitesh-meta-327279164'><FaLinkedin size='1.5rem' /></a></Text>
@@ -87,5 +89,4 @@ export const Home = () => {
 
 </Box>
 
-)
-}
+)}
