@@ -3,7 +3,7 @@ import { HomeButton } from '../components/HomeButton';
 
 export const Projects = () => {
 
-  const list_of_projects = [
+  const ProjectList = [
     {
       name: 'Twitter Login Page',
       link: 'https://hiteshmeta85.github.io/responive-twitter-login-page/',
@@ -27,19 +27,13 @@ export const Projects = () => {
       link: 'https://rocky-mesa-16580.herokuapp.com/',
       skills: 'NODE EXPRESS AND MailChimp-API',
       info: 'This was created on 8th August 2021',
-    },
-    {
-      name: 'Responsive Navbar',
-      link: 'https://updated-2-css.netlify.app',
-      skills: 'HTML CSS REACT CHAKRA UI',
-      info: 'This was created on 28th June 2021',
     }
   ];
 
   const Lists = () => {
     return (
       <Box>
-        {list_of_projects.map((projects) => {
+        {ProjectList.map((projects) => {
           return <List list={projects} />;
         })}
       </Box>
@@ -58,9 +52,9 @@ export const Projects = () => {
       >
         <Text><Button padding='0.5rem' letterSpacing='5px' backgroundColor='#BBBBBB' marginBottom='0.8rem'
                       fontFamily='Poppins'><a href={link}>{name}</a></Button></Text>
-        <Text display='inline' backgroundColor='#ffffff' padding='0 0.5rem' borderRadius='0.375rem'>{skills}</Text>
-        <Text padding='0 0.5rem' marginTop='0.5rem'>{info}</Text>
-      </Box>
+    <Text display='inline' backgroundColor='#ffffff' padding='0 0.5rem' borderRadius='0.375rem'>{skills}</Text>
+    <Text padding='0 0.5rem' marginTop='0.5rem'>{info}</Text>
+    </Box>
     );
   };
 
@@ -70,7 +64,6 @@ export const Projects = () => {
       flexDirection='column'
       fontFamily='Heebo'
       letterSpacing='1px'
-
     >
       {/*Home button added from component*/}
       <HomeButton />
@@ -94,7 +87,6 @@ export const Projects = () => {
         </Text>
 
       </Box>
-
         <Box width={{ base: '90%', lg: '80%' }} mx='auto'>
           <Lists />
         </Box>

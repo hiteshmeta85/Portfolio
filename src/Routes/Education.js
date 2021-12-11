@@ -50,9 +50,8 @@ export const Education = () => {
         <Box
 
           marginBottom='1rem'>
-          <Text fontSize='1.3rem' fontFamily='Poppins' fontWeight='600' color='#7D5A50' marginBottom='1rem'>Higher
-            Secondary
-            Education</Text>
+          <Text fontSize='1.3rem' fontFamily='Poppins' fontWeight='600' color='#7D5A50' marginBottom='1rem'>
+            Higher Secondary Education</Text>
           <Text fontSize='1rem'> MNR School Of Excellence , Navi Mumbai , MH-India</Text>
           <List padding='0.5rem 0 0.5rem 1.5rem' backgroundColor='#ffe8dc' fontWeight='400' fontFamily='Heebo'>
             <ListItem> Secured 74.4% in XII th grade</ListItem>
